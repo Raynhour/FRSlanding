@@ -1,0 +1,96 @@
+$main-color: #393d45;
+$red-color: #d4495a;
+$green-color: #33b185;
+$orange-color:#fb891b;
+$grey-color:#898989;
+
+$main-color: #ff5f45;
+$main-color-light: #ffcac2;
+$main-color-super-light: #ffe5e3;
+
+
+$white-color: #fff;
+$black-color: #000;
+
+$textbtn: 14px;
+$texttile:60px;
+$textitem:16px;
+
+$mtexttitle:30px;
+
+$ProximaECBold:"ProximaExtraCBold",serif;
+$ProximaECLight:'ProximaExtraCLight',serif;
+$ProximaECSemi:'ProximaExtraCSemi',serif;
+$ProximaLight:"ProximaNovaLight",serif;
+$ProximaRegular:"ProximaRegular",serif;
+$ProximaBold:"ProximaBold",serif;
+
+@mixin button() {
+    text-transform: uppercase;
+    display: inline-block;
+    color: $white-color;
+    width: 100%;
+    max-width: 279px;
+    max-height: 55px;
+    border: 3px solid $main-color;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 46px;
+    transition: .2s;
+    background: rgba($main-color, 0);
+    box-shadow: 0 2px 3px rgba($white-color, .3),
+                0 6px 5px rgba($black-color, .14),
+                inset 0 2px 3px rgba($white-color, .4),
+                inset 0 6px 5px rgba($black-color, .14);
+    &:hover {
+        background: $main-color;
+        box-shadow: 0 2px 3px rgba($white-color, .4),
+                    0 6px 5px rgba($black-color, .14);
+        color: $white-color;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &:active {
+        color: $main-color-light;
+        box-shadow: 0 0 10px rgba($black-color, .14);
+    }
+    &:focus {
+        color: $white-color;
+        text-decoration: none;
+    }
+}
+
+@mixin sub-title() {
+    text-transform: uppercase;
+    color: $main-color-super-light;
+    display: inline-block;
+    position: relative;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 40px;
+        height: 4px;
+        background: $main-color;
+    }
+}
+
+$i: 10;
+@while $i < 101 {
+    .mb-#{$i} { margin-bottom: $i + px; }
+    $i: $i + 10;
+}
+
+$i: 10;
+@while $i < 101 {
+    .mt-#{$i} { margin-top: $i + px; }
+    $i: $i + 10;
+}
