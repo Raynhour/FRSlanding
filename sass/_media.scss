@@ -1,7 +1,13 @@
 @import "index/index";
 
+
+
 @media (min-width:320px) and (max-width: 767px) {
     @import "index/index-max-767";
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+	@import "index/index-landscape";
 }
 
 @media (min-width:768px) and (max-width:1024px) {

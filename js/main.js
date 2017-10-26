@@ -18,18 +18,7 @@ $(document).ready(function(){
     }
  
   }, { offset: '100%' });
-  $('#list_2').waypoint(function(direction) {
-    if (direction === 'down') {
-      // reveal our content
-      $('#list_2').addClass('fadeInUp');
-      $('#list_2').removeClass('fadeOutDown');
-    } else if (direction === 'up') {
-      // hide our content
-      $('#list_2').addClass('fadeOutDown');
-      $('#list_2').removeClass('fadeInUp');
-    }
- 
-  }, { offset: '100%' });
+
    $('#list_3').waypoint(function(direction) {
     if (direction === 'down') {
       // reveal our content
@@ -89,6 +78,15 @@ $(document).ready(function(){
       $('.s6__right-1').css('transform', 'translateX('+ -150 +'%)');
     } 
   }, { offset: '50%' }); 
+$(".promo__video").click(function(){
+  var videosrc = $(this).data("video");
+  $(".promo__modal").css("display","flex");
+  $(".promo__iframe").attr("src", videosrc);
+});
+$(".promo__modal, .promo__close").click(function(){
+  $(".promo__modal").css("display","none");
+  $(".promo__iframe").attr("src", "none");
+});
 });
 
 $(".header-mobile").click(function(){
