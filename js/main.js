@@ -19,7 +19,7 @@ $(document).ready(function(){
  
   }, { offset: '100%' });
 
-   $('#list_3').waypoint(function(direction) {
+   $('#list_gears').waypoint(function(direction) {
     if (direction === 'down') {
       // reveal our content
       $('#list_3').addClass('fadeInUp');

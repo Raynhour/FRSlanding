@@ -499,7 +499,12 @@
     	&_dark:link {
     		color: $black-color;
     	}
-
+		&_dark:active {
+    		color: $black-color;
+    	}
+    	&_dark:focus {
+    		color: $black-color;
+    	}
 	}
 	&__line {
 		background:$orange-color;
@@ -962,16 +967,17 @@ width: 100%;
 	box-shadow: 0 2px 3px rgba(0,0,0,.7);
 	background:#c6c6c6;
 	cursor:pointer;
+	position: relative;
 	background-position:center center;
 	background-size:cover;
 	&::before {
 		position: absolute;
 		content:"";
-		top: 50%;
+		top: calc(50% - 32px);
 		// margin-top: -16px;
-		margin-left: -30px;		
+		
 		bottom:0;
-		left: 50%;
+		left: calc(50% - 32px);
 		right: 0;
 		background:url("../img/youtubevideo.png") no-repeat;
 		}
