@@ -275,20 +275,32 @@
 		    background-position: center center;
 		    background-repeat: no-repeat;
 		    &_integration {
-		    	background-image:url("../img/integration.jpg");
-		    }
+					background-image:url("../img/kraynova.jpg");
+					background-position: top center;
+				}
 		    &_word-peace {
-		    	background-image:url("../img/word-peace.jpg");
+					background-image:url("../img/vigovsky.jpg");
+					background-position:top center;
 		    }
 		    &_klimenko {
 		    	background-image:url("../img/klimenko.jpg");
 		    }	
 		    &_support {
 		    	background-image:url("../img/support.jpg");
-		    }		
+				}
+				&_frsbank {
+					background-image:url("../img/verbitsky.jpg");
+					background-position:top center;
+				}
+				&_sails {
+					background-image:url("../img/yaroslav.jpg");
+					background-position:top center;
+				}
+
 		}
 				&_roman {
-			    background-color: grey;
+					background-color: grey;
+
     width: 100%;
     background-image: url("../img/roma.JPG") !important;
     display: block;
@@ -298,6 +310,12 @@
     background-position: center center;
     background-repeat: no-repeat;
 		}
+		&_smm {
+			background-image:url("../img/alex.jpg");
+			background-size: cover;
+			background-position: top center;
+			background-repeat: no-repeat;
+		}		
 		&_kovalevsky {
 			    background-color: grey;
     width: 100%;
@@ -399,6 +417,9 @@
 			}
 			&:nth-child(4)::before  {
 				background-position-y: 30px;
+			}
+			&:nth-child(5)::before  {
+
 			}
 		}
 		&_business .section__item {
@@ -621,19 +642,19 @@
 					height: 32px;
 					left: -30px;
 				}
+				// .footer-nav__item:nth-child(1) .footer-nav__link::before {
+				// 	background:url("../img/footer-mobile.png") no-repeat;
+				// 	top:12px;
+				// }
 				.footer-nav__item:nth-child(1) .footer-nav__link::before {
-					background:url("../img/footer-mobile.png") no-repeat;
-					top:12px;
-				}
-				.footer-nav__item:nth-child(2) .footer-nav__link::before {
 					background:url("../img/mail.png") no-repeat;
 					top:19px;
 				}
-				.footer-nav__item:nth-child(3) .footer-nav__link::before {
+				.footer-nav__item:nth-child(2) .footer-nav__link::before {
 					background:url("../img/skype.png") no-repeat;
 					top:12px;
 				}
-				.footer-nav__item:nth-child(4) .footer-nav__link::before {
+				.footer-nav__item:nth-child(3) .footer-nav__link::before {
 					background:url("../img/skype.png") no-repeat;
 					top:12px;
 				}
@@ -680,6 +701,11 @@
 			left:0;
 			right:0;
 			margin:auto;
+			width:55px;
+			height:55px;
+			&_telegram {
+
+			}
 		}
 	}
 }
